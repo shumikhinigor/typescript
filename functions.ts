@@ -4,7 +4,6 @@ function add(a: number, b: number): number {
 function toUppercase(str: string): string {
     return str.toUpperCase()
 }
-
 interface Position {
     x: number | undefined
     y: number | undefined
@@ -13,6 +12,7 @@ interface PositionDefault extends Position{
     default: string
 }
 function position(): Position
+// @ts-ignore
 function position(a: number): PositionDefault
 function position(a: number, b: number): Position
 function position(a?: number, b?: number) {
