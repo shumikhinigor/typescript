@@ -12,8 +12,7 @@ interface PositionDefault extends Position{
     default: string
 }
 function position(): Position
-// @ts-ignore
-function position(a: number): PositionDefault
+function position(a: number): Position | PositionDefault
 function position(a: number, b: number): Position
 function position(a?: number, b?: number) {
     if (!a && !b) return { x: undefined, y: undefined }
